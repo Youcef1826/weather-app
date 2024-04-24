@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather World</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body id="body" class="bg-[url('./cloud-bg.jpg')] bg-cover bg-center min-h-screen container mx-auto flex justify-center items-center">
+
+    <!-- Begin main section -->
+    <main>
+        <section>
+            <div class="text-white mb-10">
+                <h1 class="text-6xl font-bold mb-5">Weather World</h1>
+                <p>Stay ahead of the weather with Weather World !<br>Plan your day with confidence.</p>
+            </div>
+        
+            <div id="display-weather">
+            </div>
+
+            <div class="flex shadow-lg rounded-lg">
+                <input class="w-full border-2 border-slate-200 outline-sky-300 p-2 rounded-l-lg" type="text" id="city" placeholder="Add a city : London, Paris, New York ...">
+                <button class="bg-sky-500 hover:bg-sky-700 pointer text-white px-6 rounded-r-lg" id="search-btn">Discover</button>
+            </div>
+            <div id="error-message">
+
+            </div>
+        </section>
+    </main>
+    <!-- End main section -->
+
+    <!-- JS Files/CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
